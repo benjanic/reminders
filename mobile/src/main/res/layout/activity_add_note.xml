@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--This LinearLayout displays all children in a vertical list-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <!--Create an edit text (input box) in the LinearLayout-->
+    <EditText
+        android:id="@+id/title_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="Title"
+        android:textSize="12pt" />
+
+
+    <!--Create another edit text in the LinearLayout. Layout_Weight=1 means the EditText will take up all remaining space-->
+    <EditText
+        android:id="@+id/body_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="Enter note here"
+        android:textSize="8pt" />
+</LinearLayout>
